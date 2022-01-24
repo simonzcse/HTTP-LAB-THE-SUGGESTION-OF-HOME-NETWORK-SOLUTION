@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Q2</title>
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<link href="radio.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<center><div class="center1">
+	  <h1 style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;">how many devices do you have?</h1>
+	  <br>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="radio" name="devices" value="a" id="i" checked="checked">
+            1</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="devices" value="b" id="ii">
+            2-4</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="devices" value="c" id="iii">
+            5-8</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="devices" value="d" id="iv">
+            =>9</label></td>
+        </tr>
+      </table>
+<p><center><button class="button" button onclick="gotonextpage()">Submit</button></center></p>
+
+</div></center>
+<script>
+function gotonextpage(){
+	if (document.getElementById("i").checked==true){
+		location.replace("b1.html")
+	}
+		else if (document.getElementById("ii").checked==true){
+		location.replace("b2a.html")
+	}
+		else if (document.getElementById("iii").checked==true){
+		location.replace("b2a.html")
+	}
+		else if (document.getElementById("iv").checked==true){
+		location.replace("b2b.html")
+	}
+}
+</script>
+</body>
+</html>
